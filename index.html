@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>김규림 | 보안 포트폴리오 · DFIR · 악성코드 분석 · 보안 자동화</title>
+<meta name="description" content="이화여대 사이버보안전공·법학 복수전공 김규림의 포트폴리오. DFIR, 악성코드 분석, 차량 보안, 보안 자동화 연구와 프로젝트.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="김규림 | 보안 포트폴리오">
+<meta property="og:description" content="DFIR, 악성코드 분석, 차량 보안, 보안 자동화. 연구·프로젝트·CTF 정리.">
+<!-- TODO: 배포 후 실제 주소로 교체 (예: https://gyulim2.github.io/) -->
+<meta property="og:url" content="https://gyulim2.github.io/">
+<!-- TODO: OG 이미지(1200x630)를 assets/img/og.png 로 추가한 뒤 아래 주석 해제 -->
+<!-- <meta property="og:image" content="https://gyulim2.github.io/assets/img/og.png"> -->
+<meta name="theme-color" content="#0b6b73">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="nav">
+  <div class="wrap">
+    <b>kim.gyulim</b>
+    <nav aria-label="주요 메뉴">
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#handson">Hands-on</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+<section class="hero" aria-labelledby="hero-title">
+  <p class="label">Security Portfolio</p>
+  <h1 id="hero-title">김규림</h1>
+  <p class="lead">이화여자대학교 사이버보안전공 · 법학 복수전공</p>
+  <ul class="chips" aria-label="관심분야">
+    <li>DFIR</li><li>악성코드 분석</li><li>차량 보안</li><li>보안 자동화</li>
+  </ul>
+  <div class="actions">
+    <a class="btn primary" href="https://github.com/gyulim2">GitHub</a>
+    <!-- TODO: 실제 이메일 주소로 교체 (아래 두 곳: href, 연락처 섹션) -->
+    <a class="btn" href="mailto:TODO@example.com">Email</a>
+  </div>
+</section>
+
+<section id="research" aria-labelledby="research-h">
+  <h2 id="research-h">Research</h2>
+  <article class="card">
+    <p class="meta">한국정보보호학회 하계학술대회 · 공동 제1저자</p>
+    <h3>차량 CAN Bus 침입 탐지를 위한 XAI 기반 포렌식 분석 프레임워크</h3>
+    <!-- TODO: 발표 연도, 공저자·지도교수 정보, 논문/발표자료 링크 -->
+    <ul class="pts">
+      <li>XGBoost + TreeSHAP + LLM 파이프라인</li>
+      <li>HCRL 2020 데이터셋 기준 Macro F1 0.9962</li>
+      <li>한국연구재단 지원 (RS-2024-00357189)</li>
+    </ul>
+    <ul class="tags" aria-label="기술 태그"><li>XGBoost</li><li>TreeSHAP</li><li>LLM</li><li>CAN Bus</li></ul>
+  </article>
+</section>
+
+<section id="projects" aria-labelledby="projects-h">
+  <h2 id="projects-h">Projects</h2>
+  <div class="grid">
+
+    <article class="card">
+      <h3>KISA 기준 다중 서버 보안 진단·조치 자동화 플랫폼</h3>
+      <p class="meta">5인 팀 · 2026.08 · 인프라 + 계정관리·웹서버 스크립트 담당</p>
+      <p>KISA 기준에 따라 여러 서버의 보안 진단과 조치를 자동화한 플랫폼.</p>
+      <ul class="pts">
+        <li>Ansible 기반 다중 서버 대상 진단·조치 실행</li>
+        <li>계정관리·웹서버 항목 점검 스크립트(Bash) 작성</li>
+        <li>인프라 구성 담당, Flask 기반 구성</li>
+        <!-- TODO: 점검 항목 수, 대상 서버 수, 성과 등 구체 수치 -->
+      </ul>
+      <ul class="tags"><li>Ansible</li><li>Bash</li><li>Flask</li></ul>
+      <!-- TODO: 저장소 링크 -->
+    </article>
+
+    <article class="card">
+      <h3>AWS 보안 모니터링 및 취약점 진단 자동화</h3>
+      <p class="meta">팀 프로젝트 · 진행 중 · Terraform 인프라 담당</p>
+      <p>AWS 환경의 보안 모니터링과 취약점 진단을 자동화하는 프로젝트.</p>
+      <ul class="pts">
+        <li>Terraform으로 인프라 구성(IaC) 담당</li>
+        <li>GuardDuty · Inspector · Security Hub 연계</li>
+        <li>WAF 등 AWS 보안 서비스 적용</li>
+        <!-- TODO: 팀 인원, 시작 시점, 구체 구현 내용 -->
+      </ul>
+      <ul class="tags"><li>Terraform</li><li>GuardDuty</li><li>Inspector</li><li>Security Hub</li><li>WAF</li></ul>
+      <!-- TODO: 저장소 링크 -->
+    </article>
+
+    <article class="card">
+      <h3>A-Awake 악성 이메일 탐지 시스템</h3>
+      <p class="meta">KISIA 교육과정 · 팀장</p>
+      <p>머신러닝과 OpenAI API를 활용한 악성 이메일 탐지 시스템.</p>
+      <ul class="pts">
+        <li>팀장으로 프로젝트 총괄</li>
+        <li>머신러닝 기반 탐지</li>
+        <li>OpenAI API 연동</li>
+        <!-- TODO: 팀 인원, 기간, 탐지 성능 지표 -->
+      </ul>
+      <ul class="tags"><li>Machine Learning</li><li>OpenAI API</li></ul>
+      <p><a href="https://github.com/gyulim2/AWAKE">github.com/gyulim2/AWAKE</a></p>
+    </article>
+
+    <article class="card">
+      <h3>Shadow Echo: 초음파 오디오 스테가노그래피 C2 채널</h3>
+      <p class="meta">Incognito 동아리 · 리드</p>
+      <p>초음파 오디오 스테가노그래피를 이용한 C2 채널 연구 프로젝트.</p>
+      <ul class="pts">
+        <li>초음파 대역 오디오에 데이터를 은닉하는 C2 채널 구성</li>
+        <li>동아리 프로젝트 리드</li>
+        <li>TODO: 핵심 구현·결과 한 줄</li>
+      </ul>
+      <ul class="tags"><li>Steganography</li><li>C2</li><li>Audio</li></ul>
+      <!-- TODO: 기간, 사용 기술, 저장소 링크 -->
+    </article>
+
+    <article class="card">
+      <h3>주차 관리 시스템</h3>
+      <p class="meta">리드</p>
+      <p>Flask와 MySQL 기반 주차 관리 웹 시스템.</p>
+      <ul class="pts">
+        <li>프로젝트 리드</li>
+        <li>Flask 웹 애플리케이션</li>
+        <li>MySQL 데이터 관리</li>
+        <!-- TODO: 기간, 팀 인원, 주요 기능 -->
+      </ul>
+      <ul class="tags"><li>Flask</li><li>MySQL</li></ul>
+      <p><a href="https://github.com/gyulim2/parking">github.com/gyulim2/parking</a></p>
+    </article>
+
+  </div>
+</section>
+
+<section id="handson" aria-labelledby="handson-h">
+  <h2 id="handson-h">Hands-on &amp; CTF</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>디지털 포렌식</h3>
+      <p>Autopsy, Volatility3 실습</p>
+    </article>
+    <article class="card">
+      <h3>포렌식 챌린지</h3>
+      <p>HSPACE · HDFLAB</p>
+    </article>
+    <article class="card">
+      <h3>악성코드 리버싱</h3>
+      <p>악성코드 리버싱 실습</p>
+    </article>
+    <article class="card">
+      <h3>웹 해킹</h3>
+      <p>DVWA 실습</p>
+    </article>
+    <article class="card">
+      <h3>안드로이드 보안</h3>
+      <p>안드로이드 보안 실습</p>
+    </article>
+    <article class="card">
+      <h3>지문 인식 과제</h3>
+      <p>리더보드 1위</p>
+    </article>
+  </div>
+  <!-- TODO: 각 항목의 날짜·세부 내용·블로그 링크가 있으면 추가 -->
+</section>
+
+<section id="skills" aria-labelledby="skills-h">
+  <h2 id="skills-h">Skills</h2>
+  <div class="card">
+    <dl class="skills grid">
+      <div><dt>Forensics</dt><dd>Autopsy, Volatility3</dd></div>
+      <div><dt>Reversing</dt><dd>악성코드 리버싱 <!-- TODO: 사용 도구(IDA/Ghidra 등) --></dd></div>
+      <div><dt>Automation</dt><dd>Ansible, Bash, Flask</dd></div>
+      <div><dt>Cloud · Infra</dt><dd>Terraform, AWS(GuardDuty, Inspector, Security Hub, WAF)</dd></div>
+      <div><dt>ML · AI</dt><dd>XGBoost, TreeSHAP, LLM, OpenAI API</dd></div>
+      <div><dt>Language</dt><dd>IELTS 7.5 <!-- TODO: 응시 연월 --></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="contact-h">
+  <h2 id="contact-h">Contact</h2>
+  <div class="card">
+    <p>협업·채용·연구 관련 문의는 편하게 연락 주세요.</p>
+    <dl class="facts">
+      <dt>GitHub</dt><dd><a href="https://github.com/gyulim2">github.com/gyulim2</a></dd>
+      <!-- TODO: 실제 이메일로 교체 -->
+      <dt>Email</dt><dd><a href="mailto:TODO@example.com">TODO@example.com</a></dd>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 김규림. 순수 HTML/CSS로 제작, GitHub Pages로 배포.</div>
+</footer>
+</body>
+</html>

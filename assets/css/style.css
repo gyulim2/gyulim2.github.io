@@ -50,6 +50,9 @@ dl.facts dt{font-family:var(--mono);font-size:.82rem;color:var(--muted)}
 dl.facts dd{margin:0}
 .skills dt{font-family:var(--mono);font-size:.85rem;color:var(--accent);margin-bottom:.3rem}
 .skills dd{margin:0}
+button.copy{font:inherit;font-size:.8rem;margin-left:.5rem;padding:.1rem .7rem;border:1px solid var(--accent);border-radius:6px;background:transparent;color:var(--accent);cursor:pointer}
+button.copy:hover{background:var(--accent-soft)}
+button.copy:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 footer{margin-top:96px;border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font-size:.85rem}
 @media (max-width:480px){section{padding-top:56px}.nav ul{gap:.7rem}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

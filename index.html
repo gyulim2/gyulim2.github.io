@@ -46,7 +46,7 @@
   </ul>
   <div class="actions">
     <a class="btn primary" href="https://github.com/gyulim2">GitHub</a>
-    <a class="btn" href="mailto:2371075@ewha.ac.kr">Email</a>
+    <a class="btn" href="mailto:2371075@ewha.ac.kr">2371075@ewha.ac.kr</a>
   </div>
 </section>
 
@@ -101,7 +101,7 @@
 
     <article class="card">
       <h3>A-Awake 악성 이메일 탐지 시스템</h3>
-      <p class="meta">KISIA 교육과정 · 팀장</p>
+      <p class="meta">KISIA 교육과정 · 4인 팀 · 팀장</p>
       <p>머신러닝과 OpenAI API를 활용한 악성 이메일 탐지 시스템.</p>
       <ul class="pts">
         <li>팀장으로 프로젝트 총괄</li>
@@ -128,7 +128,7 @@
 
     <article class="card">
       <h3>주차 관리 시스템</h3>
-      <p class="meta">리드</p>
+      <p class="meta">3인 팀 · 리드</p>
       <p>Flask와 MySQL 기반 주차 관리 웹 시스템.</p>
       <ul class="pts">
         <li>프로젝트 리드</li>
@@ -194,7 +194,7 @@
     <p>협업·채용·연구 관련 문의는 편하게 연락 주세요.</p>
     <dl class="facts">
       <dt>GitHub</dt><dd><a href="https://github.com/gyulim2">github.com/gyulim2</a></dd>
-      <dt>Email</dt><dd><a href="mailto:2371075@ewha.ac.kr">2371075@ewha.ac.kr</a></dd>
+      <dt>Email</dt><dd><a href="mailto:2371075@ewha.ac.kr" id="mail">2371075@ewha.ac.kr</a> <button type="button" class="copy" id="copy-mail" hidden>복사</button></dd>
       <dt>Blog</dt><dd><a href="https://kimgyulim.tistory.com/">kimgyulim.tistory.com</a></dd>
     </dl>
   </div>
@@ -205,5 +205,19 @@
 <footer>
   <div class="wrap">© 2026 김규림. 순수 HTML/CSS로 제작, GitHub Pages로 배포.</div>
 </footer>
+<script>
+  // 메일 앱이 없는 환경에서도 주소를 쉽게 쓸 수 있도록 복사 버튼 제공 (JS가 없으면 버튼은 숨겨진 상태)
+  (function () {
+    var btn = document.getElementById('copy-mail');
+    if (!btn || !navigator.clipboard) return;
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText('2371075@ewha.ac.kr').then(function () {
+        btn.textContent = '복사됨';
+        setTimeout(function () { btn.textContent = '복사'; }, 1500);
+      });
+    });
+  })();
+</script>
 </body>
 </html>

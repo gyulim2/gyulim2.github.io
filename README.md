@@ -3,7 +3,7 @@
 순수 HTML + CSS 정적 사이트입니다. 빌드 도구가 필요 없습니다.
 
 ```
-index.html            # 모든 섹션 (Hero / Research / Projects / Hands-on / Skills / Contact)
+index.html            # 모든 섹션 (Hero / Projects / Research / Hands-on / Education / Skills / Contact)
 assets/css/style.css  # 색상은 :root 변수, 다크모드는 prefers-color-scheme
 assets/img/           # 이미지 (OG 이미지 등)
 projects/             # 프로젝트 상세 페이지 (선택)
